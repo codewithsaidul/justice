@@ -20,16 +20,16 @@
 
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                "primary-color": '#B68C5A'
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        "primary-color": '#B68C5A'
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <style>
         li {
@@ -40,7 +40,7 @@
 
 <body>
     <!-- ==================== Header ====================== -->
-    <header class="max-w-[1170px] w-full mx-auto py-8 pb-14">
+    <header class="max-w-[1440px] w-full md:w-9/12 mx-auto py-8 pb-14">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -54,8 +54,8 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1]  shadow bg-base-100 rounded-box w-52">
-                            
-                            
+
+
                             <li>
                                 <a href="#" class="text-base text-[#707070]">Home</a>
                             </li>
@@ -107,8 +107,25 @@
 
 
     <!-- ==================== Main ====================== -->
-    <main>
-
+    <main class="max-w-[1440px] w-full md:w-9/12 mx-auto">
+        <!-- ======================= Banner Section ======================== -->
+        <section class="banner ">
+            <div class="hero py-28 rounded-lg"
+                style="background-image: url(./images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="w-full lg:w-[668px] mx-auto">
+                        <h1 class="mb-5 text-2xl md:text-5xl lg:text-6xl font-bold">We Provide Effective Legal Solutions</h1>
+                        <p class="mb-5 text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="space-y-5">
+                            <input type="text" placeholder="Search your services" class="input w-full max-w-xs" />
+                            <button class="bg-primary-color text-xl font-semibold text-white py-3 px-9 rounded-lg">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======================= Banner Section ======================== -->
     </main>
     <!-- ==================== Main ====================== -->
 
