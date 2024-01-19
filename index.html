@@ -18,6 +18,19 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                "primary-color": '#B68C5A'
+              }
+            }
+          }
+        }
+      </script>
+
     <style>
         li {
             list-style-type: none;
@@ -27,7 +40,7 @@
 
 <body>
     <!-- ==================== Header ====================== -->
-    <header class="max-w-[1170px] w-full mx-auto">
+    <header class="max-w-[1170px] w-full mx-auto py-8 pb-14">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -40,21 +53,24 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm space-x-5 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu menu-sm dropdown-content mt-3 z-[1]  shadow bg-base-100 rounded-box w-52">
+                            
+                            
                             <li>
-                                <a href="#">Home</a>
+                                <a href="#" class="text-base text-[#707070]">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-base text-[#707070]">Services</a>
                             </li>
                             <li>
-                                <a href="#">Services</a>
+                                <a href="#" class="text-base text-[#707070]">Cases</a>
                             </li>
                             <li>
-                                <a href="#">Cases</a>
+                                <a href="#" class="text-base text-[#707070]">Blog</a>
                             </li>
                             <li>
-                                <a href="#">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact Us</a>
+                                <a href="#" class="text-base text-[#707070]">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -65,24 +81,24 @@
 
                 <div class="navbar-center hidden lg:flex">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#" class="text-base text-[#707070] ml-8">Home</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#" class="text-base text-[#707070] ml-8">Services</a>
                     </li>
                     <li>
-                        <a href="#">Cases</a>
+                        <a href="#" class="text-base text-[#707070] ml-8">Cases</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a href="#" class="text-base text-[#707070] ml-8">Blog</a>
                     </li>
                     <li>
-                        <a href="#">Contact Us</a>
+                        <a href="#" class="text-base text-[#707070] ml-8">Contact Us</a>
                     </li>
                 </div>
 
                 <div class="navbar-end">
-                    <a class="btn">Free Consultation</a>
+                    <a class="btn text-white bg-primary-color hover:bg-primary-color">Free Consultation</a>
                 </div>
             </div>
         </nav>
